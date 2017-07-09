@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCell" rowHeight="80" id="KGk-i7-Jjw" customClass="SkillCell" customModule="UserProfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-ci-O6K" userLabel="View - Separator">
+                        <rect key="frame" x="20" y="10" width="6" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="3ac-6F-hLu"/>
+                            <constraint firstAttribute="width" constant="6" id="66a-xn-5Zs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5P-0v-8Z5">
+                        <rect key="frame" x="36" y="30" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzW-8e-LeP">
+                        <rect key="frame" x="299" y="10" width="60" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMz-Xo-MYF">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CzW-8e-LeP" secondAttribute="height" multiplier="1:1" id="Irp-UE-kMv"/>
+                            <constraint firstAttribute="bottom" secondItem="zMz-Xo-MYF" secondAttribute="bottom" constant="5" id="ROt-fF-xkz"/>
+                            <constraint firstItem="zMz-Xo-MYF" firstAttribute="top" secondItem="CzW-8e-LeP" secondAttribute="top" constant="5" id="auG-XL-hnX"/>
+                            <constraint firstAttribute="trailing" secondItem="zMz-Xo-MYF" secondAttribute="trailing" constant="5" id="l5d-fK-PHp"/>
+                            <constraint firstItem="zMz-Xo-MYF" firstAttribute="leading" secondItem="CzW-8e-LeP" secondAttribute="leading" constant="5" id="vwZ-4f-cxb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CzW-8e-LeP" firstAttribute="bottom" secondItem="lcx-ci-O6K" secondAttribute="bottom" id="5Yk-2y-S4h"/>
+                    <constraint firstItem="lcx-ci-O6K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7zS-oA-T2X"/>
+                    <constraint firstItem="j5P-0v-8Z5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Igf-Ug-Nzk"/>
+                    <constraint firstItem="lcx-ci-O6K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WUs-8s-iK3"/>
+                    <constraint firstAttribute="bottom" secondItem="lcx-ci-O6K" secondAttribute="bottom" constant="10" id="dVg-Vz-iK4"/>
+                    <constraint firstItem="j5P-0v-8Z5" firstAttribute="leading" secondItem="lcx-ci-O6K" secondAttribute="trailing" constant="10" id="hFQ-fA-Sne"/>
+                    <constraint firstItem="CzW-8e-LeP" firstAttribute="top" secondItem="lcx-ci-O6K" secondAttribute="top" id="oTM-Yp-po4"/>
+                    <constraint firstAttribute="trailing" secondItem="CzW-8e-LeP" secondAttribute="trailing" constant="20" id="uou-rm-q4I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="innerCircleView" destination="zMz-Xo-MYF" id="DYl-yY-q4Y"/>
+                <outlet property="leftSeparatorView" destination="lcx-ci-O6K" id="oSO-1J-T8L"/>
+                <outlet property="nameLabel" destination="j5P-0v-8Z5" id="FWO-QP-i4o"/>
+                <outlet property="outerCircleView" destination="CzW-8e-LeP" id="pjb-hF-11c"/>
+            </connections>
+            <point key="canvasLocation" x="54.5" y="70"/>
+        </tableViewCell>
+    </objects>
+</document>
