@@ -53,28 +53,33 @@ class ProfilePresenter {
         
         self.view?.startLoadingState()
         
-        self.profileRepository.getUser(by: "") { user, _ in
+        self.profileRepository.getUser(by: "") { [weak self] user, _ in
             
-            self.view?.endLoadingState()
+            self?.view?.endLoadingState()
             
             guard let user = user else {
                 
-                self.view?.showErrorState()
+                self?.view?.showErrorState()
                 
                 return
             }
             
-            let userViewModel = self.userToViewModelMapper.map(user)
-            let aboutViewModel = self.aboutToViewModelMapper.map(user)
-            let contactFieldViewModels = self.contactFieldsToViewModelMapper.map(user)
-            let skillViewModels = self.skillToViewModelMapper.map(user.skills)
-            
-            self.view?.set(user: userViewModel)
-            self.view?.set(contactFields: contactFieldViewModels)
-            self.view?.set(about: aboutViewModel)
-            self.view?.set(skills: skillViewModels)
-            
-            self.view?.reload()
+            self?.show(user: user)
         }
+    }
+    
+    private func show(user: User) {
+        
+        let userViewModel = self.userToViewModelMapper.map(user)
+        let aboutViewModel = self.aboutToViewModelMapper.map(user)
+        let contactFieldViewModels = self.contactFieldsToViewModelMapper.map(user)
+        let skillViewModels = self.skillToViewModelMapper.map(user.skills)
+        
+        self.view?.set(user: userViewModel)
+        self.view?.set(contactFields: contactFieldViewModels)
+        self.view?.set(about: aboutViewModel)
+        self.view?.set(skills: skillViewModels)
+        
+        self.view?.reload()
     }
 }
