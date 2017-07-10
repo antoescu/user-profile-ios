@@ -58,6 +58,7 @@ class ProfileViewController: UIViewController {
     private func configureTableView() {
         
         self.dataSource.configure(tableView: self.tableView)
+        self.dataSource.delegate = self.presenter
         
         self.tableView.delegate = self.dataSource
         
@@ -65,8 +66,10 @@ class ProfileViewController: UIViewController {
         self.tableView.separatorColor = .secondary
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 100
+        self.tableView.estimatedRowHeight = 80
         self.tableView.sectionHeaderHeight = 60
+        
+        self.tableView.tableFooterView = UIView()
     }
 }
 
@@ -87,32 +90,80 @@ extension ProfileViewController: ProfileView {
         assertionFailure("https://api.myjson.com/bins/afe5r seems not to be working")
     }
     
-    internal func set(user: UserViewModel) {
-        
+    func showHeader(with value: UserViewModel) {
+     
         let header: ProfileHeaderView = .fromNib()
         
-        header.configure(user: user)
+        header.configure(user: value)
         
         self.tableView.tableHeaderView = header
     }
     
-    internal func set(contactFields: [ContactFieldViewModel]) {
+    func showContactSection(with values: [ContactFieldViewModel]) {
         
-        self.dataSource.load(contactFields: contactFields)
+        self.dataSource.addContactRows(with: values)
     }
     
-    internal func set(about: AboutViewModel) {
+    func showAboutSection(with values: AboutViewModel) {
         
-        self.dataSource.load(about: about)
+        self.dataSource.addAboutRows(with: [values])
     }
     
-    internal func set(skills: [SkillViewModel]) {
+    func showSkillsSection(with values: [SkillViewModel]) {
         
-        self.dataSource.load(skills: skills)
+        self.dataSource.addSkillsRows(with: values)
     }
         
     internal func reload() {
         
         self.tableView?.reloadData()
+    }
+    
+    internal func toggleContactSection(with values: [ContactFieldViewModel]) {
+        
+        self.tableView.beginUpdates()
+        
+        if self.dataSource.isContactSectionEmpty() {
+            
+            self.tableView.insertRows(at: self.dataSource.addContactRows(with: values), with: .middle)
+            
+        } else {
+            
+            self.tableView.deleteRows(at: self.dataSource.removeContactRows(), with: .middle)
+        }
+        
+        self.tableView.endUpdates()
+    }
+    
+    internal func toggleAboutSection(with value: AboutViewModel) {
+        
+        self.tableView.beginUpdates()
+        
+        if self.dataSource.isAboutSectionEmpty() {
+            
+            self.tableView.insertRows(at: self.dataSource.addAboutRows(with: [value]), with: .middle)
+            
+        } else {
+            
+            self.tableView.deleteRows(at: self.dataSource.removeAboutRows(), with: .middle)
+        }
+        
+        self.tableView.endUpdates()
+    }
+    
+    internal func toggleSkillsSection(with values: [SkillViewModel]) {
+        
+        self.tableView.beginUpdates()
+        
+        if self.dataSource.isSkillsSectionEmpty() {
+            
+            self.tableView.insertRows(at: self.dataSource.addSkillsRows(with: values), with: .middle)
+            
+        } else {
+            
+            self.tableView.deleteRows(at: self.dataSource.removeSkillsRows(), with: .middle)
+        }
+        
+        self.tableView.endUpdates()
     }
 }

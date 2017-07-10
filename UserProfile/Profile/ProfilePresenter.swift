@@ -14,10 +14,14 @@ protocol ProfileView: class {
     func endLoadingState()
     func showErrorState()
     
-    func set(user: UserViewModel)
-    func set(contactFields: [ContactFieldViewModel])
-    func set(about: AboutViewModel)
-    func set(skills: [SkillViewModel])
+    func showHeader(with value: UserViewModel)
+    func showContactSection(with values: [ContactFieldViewModel])
+    func showAboutSection(with values: AboutViewModel)
+    func showSkillsSection(with values: [SkillViewModel])
+    
+    func toggleContactSection(with value: [ContactFieldViewModel])
+    func toggleAboutSection(with value: AboutViewModel)
+    func toggleSkillsSection(with value: [SkillViewModel])
     
     func reload()
 }
@@ -25,11 +29,14 @@ protocol ProfileView: class {
 class ProfilePresenter {
     
     internal weak var view: ProfileView?
-    private let profileRepository: ProfileRepository
-    private let userToViewModelMapper: UserToViewModelMapper
-    private let aboutToViewModelMapper: AboutToViewModelMapper
-    private let contactFieldsToViewModelMapper: ContactFieldsModelMapper
-    private let skillToViewModelMapper: SkillToViewModelMapper
+    
+    fileprivate let profileRepository: ProfileRepository
+    fileprivate let userToViewModelMapper: UserToViewModelMapper
+    fileprivate let aboutToViewModelMapper: AboutToViewModelMapper
+    fileprivate let contactFieldsToViewModelMapper: ContactFieldsModelMapper
+    fileprivate let skillToViewModelMapper: SkillToViewModelMapper
+    
+    fileprivate var user: User?
     
     init(profileRepository: ProfileRepository,
          userToViewModelMapper: UserToViewModelMapper,
@@ -64,6 +71,8 @@ class ProfilePresenter {
                 return
             }
             
+            self?.user = user
+            
             self?.show(user: user)
         }
     }
@@ -75,11 +84,41 @@ class ProfilePresenter {
         let contactFieldViewModels = self.contactFieldsToViewModelMapper.map(user)
         let skillViewModels = self.skillToViewModelMapper.map(user.skills)
         
-        self.view?.set(user: userViewModel)
-        self.view?.set(contactFields: contactFieldViewModels)
-        self.view?.set(about: aboutViewModel)
-        self.view?.set(skills: skillViewModels)
+        self.view?.showHeader(with: userViewModel)
+        self.view?.showContactSection(with: contactFieldViewModels)
+        self.view?.showAboutSection(with: aboutViewModel)
+        self.view?.showSkillsSection(with: skillViewModels)
         
         self.view?.reload()
+    }
+}
+
+extension ProfilePresenter: ProfileDataSourceDelegate {
+    
+    internal func didSelectToggleContactSection() {
+        
+        guard let user = self.user else { return }
+        
+        let contactFieldViewModels = self.contactFieldsToViewModelMapper.map(user)
+        
+        self.view?.toggleContactSection(with: contactFieldViewModels)
+    }
+    
+    internal func didSelectToggleAboutSection() {
+        
+        guard let user = self.user else { return }
+        
+        let aboutViewModel = self.aboutToViewModelMapper.map(user)
+        
+        self.view?.toggleAboutSection(with: aboutViewModel)
+    }
+    
+    internal func didSelectToggleSkillsSection() {
+        
+        guard let user = self.user else { return }
+        
+        let skillViewModels = self.skillToViewModelMapper.map(user.skills)
+        
+        self.view?.toggleSkillsSection(with: skillViewModels)
     }
 }

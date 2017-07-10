@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-ea-gkt">
-                        <rect key="frame" x="20" y="20" width="372" height="40.5"/>
+                        <rect key="frame" x="20" y="0.0" width="372" height="80.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,14 +26,17 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-FC-DSc">
                         <rect key="frame" x="346" y="0.0" width="46" height="80.5"/>
                         <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="toggleButtonTapped:" destination="hjN-D2-nT6" eventType="touchUpInside" id="Bnl-EB-CBO"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="f1V-ea-gkt" secondAttribute="bottom" constant="20" id="6ot-F4-HfC"/>
-                    <constraint firstItem="f1V-ea-gkt" firstAttribute="top" secondItem="MGv-Q3-wyn" secondAttribute="top" constant="20" id="Bzy-WH-PEP"/>
+                    <constraint firstAttribute="bottom" secondItem="f1V-ea-gkt" secondAttribute="bottom" id="6ot-F4-HfC"/>
+                    <constraint firstItem="f1V-ea-gkt" firstAttribute="top" secondItem="MGv-Q3-wyn" secondAttribute="top" id="Bzy-WH-PEP"/>
                     <constraint firstAttribute="trailing" secondItem="f1V-ea-gkt" secondAttribute="trailing" constant="20" id="CQ7-Zs-JeX"/>
-                    <constraint firstItem="f1V-ea-gkt" firstAttribute="leading" secondItem="MGv-Q3-wyn" secondAttribute="leading" constant="20" id="FRF-zt-0ZW"/>
+                    <constraint firstItem="f1V-ea-gkt" firstAttribute="leading" secondItem="MGv-Q3-wyn" secondAttribute="leading" priority="999" constant="20" id="FRF-zt-0ZW"/>
                     <constraint firstAttribute="trailing" secondItem="yZo-FC-DSc" secondAttribute="trailing" constant="20" id="V5L-gT-CQv"/>
                     <constraint firstItem="yZo-FC-DSc" firstAttribute="top" secondItem="MGv-Q3-wyn" secondAttribute="top" id="fHg-rZ-yFr"/>
                     <constraint firstAttribute="bottom" secondItem="yZo-FC-DSc" secondAttribute="bottom" id="tXN-cd-I0j"/>

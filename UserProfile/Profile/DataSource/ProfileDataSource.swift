@@ -8,9 +8,16 @@
 
 import UIKit
 
+protocol ProfileDataSourceDelegate: class {
+    
+    func didSelectToggleContactSection()
+    func didSelectToggleAboutSection()
+    func didSelectToggleSkillsSection()
+}
+
 class ProfileDataSource: GenericDataSource {
     
-    internal enum Section: Int {
+    fileprivate enum Section: Int {
         
         case contact
         case about
@@ -24,19 +31,74 @@ class ProfileDataSource: GenericDataSource {
         SkillCell.self
     ]
     
-    internal func load(contactFields: [ContactFieldViewModel]) {
+    internal weak var delegate: ProfileDataSourceDelegate?
+    
+    private func isSectionEmpty(_ section: Int) -> Bool {
         
-        self.set(values: contactFields, reusableId: ContactFieldCell.className, inSection: Section.contact.rawValue)
+        return self[section].count == 0
     }
     
-    internal func load(about: AboutViewModel) {
+    private func removeRows(of section: Int) -> [IndexPath] {
         
-        self.set(values: [about], reusableId: AboutCell.className, inSection: Section.about.rawValue)
+        let indexPaths = (0..<self[section].count).map { IndexPath(row: $0, section: section) }
+        
+        self.clearValues(at: section)
+        
+        return indexPaths
     }
     
-    internal func load(skills: [SkillViewModel]) {
+    internal func isContactSectionEmpty() -> Bool {
         
-        self.set(values: skills, reusableId: SkillCell.className, inSection: Section.skills.rawValue)
+        return self.isSectionEmpty(Section.contact.rawValue)
+    }
+    
+    @discardableResult
+    internal func addContactRows(with values: [ContactFieldViewModel]) -> [IndexPath] {
+        
+        return self.appendRows(with: values,
+                               reusableId: ContactFieldCell.className,
+                               toSection: Section.contact.rawValue)
+    }
+    
+    internal func removeContactRows() -> [IndexPath] {
+        
+        return self.removeRows(of: Section.contact.rawValue)
+    }
+    
+    internal func isAboutSectionEmpty() -> Bool {
+        
+        return self.isSectionEmpty(Section.about.rawValue)
+    }
+    
+    @discardableResult
+    internal func addAboutRows(with values: [AboutViewModel]) -> [IndexPath] {
+        
+        return self.appendRows(with: values,
+                               reusableId: AboutCell.className,
+                               toSection: Section.about.rawValue)
+    }
+    
+    internal func removeAboutRows() -> [IndexPath] {
+        
+        return self.removeRows(of: Section.about.rawValue)
+    }
+    
+    internal func isSkillsSectionEmpty() -> Bool {
+        
+        return self.isSectionEmpty(Section.skills.rawValue)
+    }
+    
+    @discardableResult
+    internal func addSkillsRows(with values: [SkillViewModel]) -> [IndexPath] {
+        
+        return self.appendRows(with: values,
+                               reusableId: SkillCell.className,
+                               toSection: Section.skills.rawValue)
+    }
+    
+    internal func removeSkillsRows() -> [IndexPath] {
+        
+        return self.removeRows(of: Section.skills.rawValue)
     }
     
     override internal func configure(tableView: UITableView) {
@@ -73,31 +135,34 @@ class ProfileDataSource: GenericDataSource {
 
 extension ProfileDataSource: UITableViewDelegate {
     
-    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerView: ProfileSectionHeaderView = tableView.dequeueReusableHeaderFooterView()
         
         var name = ""
+        var isSectionClosed = false
         if let profileSection = ProfileDataSource.Section(rawValue: section) {
             
             switch profileSection {
                 
             case .contact:
                 name = "Contact"
+                isSectionClosed = self.isContactSectionEmpty()
+                headerView.toggleButtonClosure = { self.delegate?.didSelectToggleContactSection() }
                 
             case .about:
                 name = "About"
+                isSectionClosed = self.isAboutSectionEmpty()
+                headerView.toggleButtonClosure = { self.delegate?.didSelectToggleAboutSection() }
                 
             case .skills:
                 name = "Skills"
+                isSectionClosed = self.isSkillsSectionEmpty()
+                headerView.toggleButtonClosure = { self.delegate?.didSelectToggleSkillsSection() }
             }
         }
         
-        headerView.configure(value: name)
+        headerView.configureSection(with: name, isClosed: isSectionClosed)
         
         return headerView
     }

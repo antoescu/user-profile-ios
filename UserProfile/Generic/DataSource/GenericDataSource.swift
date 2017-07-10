@@ -12,16 +12,83 @@ open class GenericDataSource: NSObject {
     
     fileprivate var values: [[(value: Any, reusableId: String)]] = []
     
-    public final func set(values: [Any], reusableId: String, inSection section: Int) {
+    public final func insertRow(with value: Any, reusableId: String, inSection section: Int, row: Int) {
+            
+        self.values[section][row] = (value, reusableId)
+    }
+    
+    public final func insertRows(with values: [Any], reusableId: String, inSection section: Int) {
         
-        self.checkSectionExists(at: section)
+        self.createPreviousSectionsIfNeeded(at: section)
         
         self.values[section] = values.map { ($0, reusableId) }
     }
     
-    public final func set(value: Any, reusableId: String, inSection section: Int, row: Int) {
-            
-        self.values[section][row] = (value, reusableId)
+    @discardableResult
+    public final func prependRow(with value: Any, reusableId: String, toSection section: Int) -> IndexPath {
+        
+        self.createPreviousSectionsIfNeeded(at: section)
+        
+        self.values[section].insert((value, reusableId), at: 0)
+        
+        let indexPath = IndexPath(row: 0, section: section)
+        
+        return indexPath
+    }
+    
+    @discardableResult
+    public final func prependRows(with values: [Any], reusableId: String, toSection section: Int) -> [IndexPath] {
+        
+        self.createPreviousSectionsIfNeeded(at: section)
+        
+        values.forEach { self.values[section].insert(($0, reusableId), at: 0) }
+        
+        let indexPaths = (0..<values.count).map { IndexPath(row: $0, section: section) }
+        
+        return indexPaths
+    }
+    
+    @discardableResult
+    public final func appendRow(with value: Any, reusableId: String, toSection section: Int) -> IndexPath {
+        
+        self.createPreviousSectionsIfNeeded(at: section)
+        
+        self.values[section].append((value, reusableId))
+        
+        let indexPath = IndexPath(row: self.values[section].count - 1, section: section)
+        
+        return indexPath
+    }
+    
+    @discardableResult
+    public final func appendRows(with values: [Any], reusableId: String, toSection section: Int) -> [IndexPath] {
+        
+        self.createPreviousSectionsIfNeeded(at: section)
+        
+        values.forEach { self.values[section].append(($0, reusableId)) }
+        
+        let range = (self.values[section].count - values.count..<self.values[section].count)
+        
+        let indexPaths = range.map { IndexPath(row: $0, section: section) }
+        
+        return indexPaths
+    }
+    
+    public final func clearValues() {
+        
+        self.values = [[]]
+    }
+    
+    public final func clearValues(at section: Int) {
+        
+        self.createPreviousSectionsIfNeeded(at: section)
+        
+        self.values[section] = []
+    }
+    
+    public final subscript(section: Int) -> [Any] {
+        
+        return self.values[section].map { $0.value }
     }
     
     public final subscript(indexPath: IndexPath) -> Any {
@@ -33,9 +100,9 @@ open class GenericDataSource: NSObject {
     
     public func configure(tableView: UITableView) {}
     
-    public final func register(cells: [UICollectionViewCell.Type], colllectionView: UICollectionView) {
+    public final func register(cells: [UICollectionViewCell.Type], collectionView: UICollectionView) {
         
-        cells.forEach { colllectionView.register($0.nib, forCellWithReuseIdentifier: $0.className) }
+        cells.forEach { collectionView.register($0.nib, forCellWithReuseIdentifier: $0.className) }
     }
     
     public final func register(cells: [UITableViewCell.Type], tableView: UITableView) {
@@ -47,7 +114,7 @@ open class GenericDataSource: NSObject {
     
     open func configureCell(tableCell cell: UITableViewCell, withValue value: Any) {}
     
-    private func checkSectionExists(at index: Int) {
+    private func createPreviousSectionsIfNeeded(at index: Int) {
         
         guard self.values.count <= index else { return }
         

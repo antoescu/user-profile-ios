@@ -8,10 +8,16 @@
 
 import UIKit
 
+typealias ToggleButtonClosure = () -> Void
+
 class ProfileSectionHeaderView: UITableViewHeaderFooterView {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var toggleButton: UIButton!
+    @IBOutlet fileprivate weak var nameLabel: UILabel!
+    @IBOutlet private weak var toggleButton: UIButton!
+    
+    fileprivate var isToggleButtonInClosedState: Bool = false
+    
+    internal var toggleButtonClosure: ToggleButtonClosure?
     
     override func awakeFromNib() {
         
@@ -20,16 +26,28 @@ class ProfileSectionHeaderView: UITableViewHeaderFooterView {
         self.nameLabel.textColor = .primary
         self.nameLabel.font = .bigBold
         
-        self.toggleButton.setTitle("", for: .normal)
         self.toggleButton.setTitleColor(.text, for: .normal)
         self.toggleButton.titleLabel?.font = .small
     }
-}
-
-extension ProfileSectionHeaderView: GenericCell {
     
-    internal func configure(value: String) {
+    @IBAction private func toggleButtonTapped(_ sender: UIButton) {
         
-        self.nameLabel.text = value
+        self.isToggleButtonInClosedState = !self.isToggleButtonInClosedState
+        self.updateToggleButtonTitle()
+        
+        self.toggleButtonClosure?()
+    }
+    
+    fileprivate func updateToggleButtonTitle() {
+        
+        self.toggleButton.setTitle((self.isToggleButtonInClosedState) ? "Open" : "Close", for: .normal)
+    }
+    
+    internal func configureSection(with name: String, isClosed: Bool) {
+        
+        self.nameLabel.text = name
+        
+        self.isToggleButtonInClosedState = isClosed
+        self.updateToggleButtonTitle()
     }
 }
