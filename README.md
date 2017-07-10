@@ -1,12 +1,12 @@
 # user-profile-ios
-This application is just an dummy example of what I believe are good practices in iOS development.
+This application is just an dummy example of what I believe are good practices for iOS development, please contact me if you have any improvement or doubt.
 
 ## TODO list
 
 * Add tests
 * Improve the repository with different Data Sources
-* Toggle the sections
-* Add user interaction
+*  ✓ Toggle the sections
+* Add user interaction to introduce a Corrdinator
 
 ## Requirements
 
