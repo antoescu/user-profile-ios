@@ -9,49 +9,49 @@
 /* Begin PBXBuildFile section */
 		42ADD33E70E35C311F2947ED /* Pods_UserProfileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F07A2CEDA8057C465ABF190 /* Pods_UserProfileTests.framework */; };
 		85C77D03F959673953C02277 /* Pods_UserProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576D6E8FC9DADFA68240A438 /* Pods_UserProfile.framework */; };
+		AF13E1E81F155C010022F08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A21F155C010022F08E /* AppDelegate.swift */; };
+		AF13E1E91F155C010022F08E /* Assembly+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A41F155C010022F08E /* Assembly+Profile.swift */; };
+		AF13E1EA1F155C010022F08E /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A51F155C010022F08E /* Assembly.swift */; };
+		AF13E1EB1F155C010022F08E /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A71F155C010022F08E /* String+App.swift */; };
+		AF13E1EC1F155C010022F08E /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A81F155C010022F08E /* UIColor+App.swift */; };
+		AF13E1ED1F155C010022F08E /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1A91F155C010022F08E /* UIFont+App.swift */; };
+		AF13E1EE1F155C010022F08E /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1AC1F155C010022F08E /* NSObject+Helpers.swift */; };
+		AF13E1EF1F155C010022F08E /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1AD1F155C010022F08E /* String+Helpers.swift */; };
+		AF13E1F01F155C010022F08E /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1AE1F155C010022F08E /* UICollectionView+Helpers.swift */; };
+		AF13E1F11F155C010022F08E /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1AF1F155C010022F08E /* UIColor+Helpers.swift */; };
+		AF13E1F21F155C010022F08E /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1B01F155C010022F08E /* UITableView+Helpers.swift */; };
+		AF13E1F31F155C010022F08E /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1B11F155C010022F08E /* UIView+Helpers.swift */; };
+		AF13E1F41F155C010022F08E /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1B31F155C010022F08E /* GenericCell.swift */; };
+		AF13E1F51F155C010022F08E /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1B41F155C010022F08E /* GenericDataSource.swift */; };
+		AF13E1F61F155C010022F08E /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1B61F155C010022F08E /* Mappable.swift */; };
+		AF13E1F71F155C010022F08E /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1BE1F155C010022F08E /* ProfileRepository.swift */; };
+		AF13E1F81F155C010022F08E /* AboutToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C11F155C010022F08E /* AboutToViewModelMapper.swift */; };
+		AF13E1F91F155C010022F08E /* ContactFieldsModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C21F155C010022F08E /* ContactFieldsModelMapper.swift */; };
+		AF13E1FA1F155C010022F08E /* SkillToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C31F155C010022F08E /* SkillToViewModelMapper.swift */; };
+		AF13E1FB1F155C010022F08E /* UserToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C41F155C010022F08E /* UserToViewModelMapper.swift */; };
+		AF13E1FC1F155C010022F08E /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C61F155C010022F08E /* Skill.swift */; };
+		AF13E1FD1F155C010022F08E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1C71F155C010022F08E /* User.swift */; };
+		AF13E1FE1F155C010022F08E /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1CC1F155C010022F08E /* ProfileDataSource.swift */; };
+		AF13E1FF1F155C010022F08E /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1CD1F155C010022F08E /* ProfilePresenter.swift */; };
+		AF13E2001F155C010022F08E /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1D01F155C010022F08E /* AboutCell.swift */; };
+		AF13E2011F155C010022F08E /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1D11F155C010022F08E /* AboutCell.xib */; };
+		AF13E2021F155C010022F08E /* ContactFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1D21F155C010022F08E /* ContactFieldCell.swift */; };
+		AF13E2031F155C010022F08E /* ContactFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1D31F155C010022F08E /* ContactFieldCell.xib */; };
+		AF13E2041F155C010022F08E /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1D41F155C010022F08E /* SkillCell.swift */; };
+		AF13E2051F155C010022F08E /* SkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1D51F155C010022F08E /* SkillCell.xib */; };
+		AF13E2061F155C010022F08E /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1D71F155C010022F08E /* ProfileHeaderView.swift */; };
+		AF13E2071F155C010022F08E /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1D81F155C010022F08E /* ProfileHeaderView.xib */; };
+		AF13E2081F155C010022F08E /* ProfileSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1D91F155C010022F08E /* ProfileSectionHeaderView.swift */; };
+		AF13E2091F155C010022F08E /* ProfileSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1DA1F155C010022F08E /* ProfileSectionHeaderView.xib */; };
+		AF13E20A1F155C010022F08E /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1DC1F155C010022F08E /* AboutViewModel.swift */; };
+		AF13E20B1F155C010022F08E /* ContactFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1DD1F155C010022F08E /* ContactFieldViewModel.swift */; };
+		AF13E20C1F155C010022F08E /* SkillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1DE1F155C010022F08E /* SkillViewModel.swift */; };
+		AF13E20D1F155C010022F08E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1DF1F155C010022F08E /* UserViewModel.swift */; };
+		AF13E20E1F155C010022F08E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF13E1E11F155C010022F08E /* ProfileViewController.swift */; };
+		AF13E20F1F155C010022F08E /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1E21F155C010022F08E /* ProfileViewController.xib */; };
+		AF13E2101F155C010022F08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1E41F155C010022F08E /* Assets.xcassets */; };
+		AF13E2111F155C010022F08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF13E1E51F155C010022F08E /* LaunchScreen.storyboard */; };
 		AF19158B1EE2BED300D29D19 /* UserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19158A1EE2BED300D29D19 /* UserProfileTests.swift */; };
-		AF33F8A41F12E3F900518151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8691F12E3F900518151 /* AppDelegate.swift */; };
-		AF33F8A51F12E3F900518151 /* Assembly+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F86B1F12E3F900518151 /* Assembly+Profile.swift */; };
-		AF33F8A61F12E3F900518151 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F86C1F12E3F900518151 /* Assembly.swift */; };
-		AF33F8A71F12E3F900518151 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F86E1F12E3F900518151 /* String+App.swift */; };
-		AF33F8A81F12E3F900518151 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F86F1F12E3F900518151 /* UIColor+App.swift */; };
-		AF33F8A91F12E3F900518151 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8701F12E3F900518151 /* UIFont+App.swift */; };
-		AF33F8AA1F12E3F900518151 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8731F12E3F900518151 /* GenericCell.swift */; };
-		AF33F8AB1F12E3F900518151 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8741F12E3F900518151 /* GenericDataSource.swift */; };
-		AF33F8AC1F12E3F900518151 /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8761F12E3F900518151 /* NSObject+Helpers.swift */; };
-		AF33F8AD1F12E3F900518151 /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8771F12E3F900518151 /* String+Helpers.swift */; };
-		AF33F8AE1F12E3F900518151 /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8781F12E3F900518151 /* UICollectionView+Helpers.swift */; };
-		AF33F8AF1F12E3F900518151 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8791F12E3F900518151 /* UIColor+Helpers.swift */; };
-		AF33F8B01F12E3F900518151 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F87A1F12E3F900518151 /* UITableView+Helpers.swift */; };
-		AF33F8B11F12E3F900518151 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F87B1F12E3F900518151 /* UIView+Helpers.swift */; };
-		AF33F8B21F12E3F900518151 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F87D1F12E3F900518151 /* Mappable.swift */; };
-		AF33F8B31F12E3F900518151 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8801F12E3F900518151 /* AboutCell.swift */; };
-		AF33F8B41F12E3F900518151 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8811F12E3F900518151 /* AboutCell.xib */; };
-		AF33F8B51F12E3F900518151 /* ContactFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8821F12E3F900518151 /* ContactFieldCell.swift */; };
-		AF33F8B61F12E3F900518151 /* ContactFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8831F12E3F900518151 /* ContactFieldCell.xib */; };
-		AF33F8B71F12E3F900518151 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8841F12E3F900518151 /* ProfileHeaderView.swift */; };
-		AF33F8B81F12E3F900518151 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8851F12E3F900518151 /* ProfileHeaderView.xib */; };
-		AF33F8B91F12E3F900518151 /* ProfileSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8861F12E3F900518151 /* ProfileSectionHeaderView.swift */; };
-		AF33F8BA1F12E3F900518151 /* ProfileSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8871F12E3F900518151 /* ProfileSectionHeaderView.xib */; };
-		AF33F8BB1F12E3F900518151 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8881F12E3F900518151 /* SkillCell.swift */; };
-		AF33F8BC1F12E3F900518151 /* SkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8891F12E3F900518151 /* SkillCell.xib */; };
-		AF33F8BD1F12E3F900518151 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F88B1F12E3F900518151 /* ProfileDataSource.swift */; };
-		AF33F8BE1F12E3F900518151 /* AboutToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F88D1F12E3F900518151 /* AboutToViewModelMapper.swift */; };
-		AF33F8BF1F12E3F900518151 /* ContactFieldsModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F88E1F12E3F900518151 /* ContactFieldsModelMapper.swift */; };
-		AF33F8C01F12E3F900518151 /* SkillToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F88F1F12E3F900518151 /* SkillToViewModelMapper.swift */; };
-		AF33F8C11F12E3F900518151 /* UserToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8901F12E3F900518151 /* UserToViewModelMapper.swift */; };
-		AF33F8C21F12E3F900518151 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8921F12E3F900518151 /* Skill.swift */; };
-		AF33F8C31F12E3F900518151 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8931F12E3F900518151 /* User.swift */; };
-		AF33F8C41F12E3F900518151 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8941F12E3F900518151 /* ProfilePresenter.swift */; };
-		AF33F8C51F12E3F900518151 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8951F12E3F900518151 /* ProfileViewController.swift */; };
-		AF33F8C61F12E3F900518151 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8961F12E3F900518151 /* ProfileViewController.xib */; };
-		AF33F8C71F12E3F900518151 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F8981F12E3F900518151 /* ProfileRepository.swift */; };
-		AF33F8C81F12E3F900518151 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F89A1F12E3F900518151 /* AboutViewModel.swift */; };
-		AF33F8C91F12E3F900518151 /* ContactFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F89B1F12E3F900518151 /* ContactFieldViewModel.swift */; };
-		AF33F8CA1F12E3F900518151 /* SkillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F89C1F12E3F900518151 /* SkillViewModel.swift */; };
-		AF33F8CB1F12E3F900518151 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33F89D1F12E3F900518151 /* UserViewModel.swift */; };
-		AF33F8CC1F12E3F900518151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF33F89F1F12E3F900518151 /* Assets.xcassets */; };
-		AF33F8CD1F12E3F900518151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF33F8A11F12E3F900518151 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,53 +70,53 @@
 		745E8CFE0AEDD7EFCB82F926 /* Pods-UserProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-UserProfile/Pods-UserProfile.release.xcconfig"; sourceTree = "<group>"; };
 		8A9AF956A68751A95507F473 /* Pods-UserProfileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserProfileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UserProfileTests/Pods-UserProfileTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F07A2CEDA8057C465ABF190 /* Pods_UserProfileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserProfileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF13E1A21F155C010022F08E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF13E1A41F155C010022F08E /* Assembly+Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Profile.swift"; sourceTree = "<group>"; };
+		AF13E1A51F155C010022F08E /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		AF13E1A71F155C010022F08E /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
+		AF13E1A81F155C010022F08E /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		AF13E1A91F155C010022F08E /* UIFont+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
+		AF13E1AC1F155C010022F08E /* NSObject+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1AD1F155C010022F08E /* String+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1AE1F155C010022F08E /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1AF1F155C010022F08E /* UIColor+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1B01F155C010022F08E /* UITableView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1B11F155C010022F08E /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		AF13E1B31F155C010022F08E /* GenericCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
+		AF13E1B41F155C010022F08E /* GenericDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		AF13E1B61F155C010022F08E /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		AF13E1BE1F155C010022F08E /* ProfileRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
+		AF13E1C11F155C010022F08E /* AboutToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutToViewModelMapper.swift; sourceTree = "<group>"; };
+		AF13E1C21F155C010022F08E /* ContactFieldsModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldsModelMapper.swift; sourceTree = "<group>"; };
+		AF13E1C31F155C010022F08E /* SkillToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillToViewModelMapper.swift; sourceTree = "<group>"; };
+		AF13E1C41F155C010022F08E /* UserToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToViewModelMapper.swift; sourceTree = "<group>"; };
+		AF13E1C61F155C010022F08E /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		AF13E1C71F155C010022F08E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF13E1CC1F155C010022F08E /* ProfileDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		AF13E1CD1F155C010022F08E /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		AF13E1D01F155C010022F08E /* AboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		AF13E1D11F155C010022F08E /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		AF13E1D21F155C010022F08E /* ContactFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldCell.swift; sourceTree = "<group>"; };
+		AF13E1D31F155C010022F08E /* ContactFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactFieldCell.xib; sourceTree = "<group>"; };
+		AF13E1D41F155C010022F08E /* SkillCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
+		AF13E1D51F155C010022F08E /* SkillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillCell.xib; sourceTree = "<group>"; };
+		AF13E1D71F155C010022F08E /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		AF13E1D81F155C010022F08E /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		AF13E1D91F155C010022F08E /* ProfileSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSectionHeaderView.swift; sourceTree = "<group>"; };
+		AF13E1DA1F155C010022F08E /* ProfileSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSectionHeaderView.xib; sourceTree = "<group>"; };
+		AF13E1DC1F155C010022F08E /* AboutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		AF13E1DD1F155C010022F08E /* ContactFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldViewModel.swift; sourceTree = "<group>"; };
+		AF13E1DE1F155C010022F08E /* SkillViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewModel.swift; sourceTree = "<group>"; };
+		AF13E1DF1F155C010022F08E /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		AF13E1E11F155C010022F08E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AF13E1E21F155C010022F08E /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		AF13E1E41F155C010022F08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF13E1E61F155C010022F08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF13E1E71F155C010022F08E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1915721EE2BED300D29D19 /* UserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1915861EE2BED300D29D19 /* UserProfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserProfileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF19158A1EE2BED300D29D19 /* UserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTests.swift; sourceTree = "<group>"; };
 		AF19158C1EE2BED300D29D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF33F8691F12E3F900518151 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF33F86B1F12E3F900518151 /* Assembly+Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Profile.swift"; sourceTree = "<group>"; };
-		AF33F86C1F12E3F900518151 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
-		AF33F86E1F12E3F900518151 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
-		AF33F86F1F12E3F900518151 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
-		AF33F8701F12E3F900518151 /* UIFont+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
-		AF33F8731F12E3F900518151 /* GenericCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
-		AF33F8741F12E3F900518151 /* GenericDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
-		AF33F8761F12E3F900518151 /* NSObject+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F8771F12E3F900518151 /* String+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F8781F12E3F900518151 /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F8791F12E3F900518151 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F87A1F12E3F900518151 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F87B1F12E3F900518151 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
-		AF33F87D1F12E3F900518151 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
-		AF33F8801F12E3F900518151 /* AboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
-		AF33F8811F12E3F900518151 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
-		AF33F8821F12E3F900518151 /* ContactFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldCell.swift; sourceTree = "<group>"; };
-		AF33F8831F12E3F900518151 /* ContactFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactFieldCell.xib; sourceTree = "<group>"; };
-		AF33F8841F12E3F900518151 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
-		AF33F8851F12E3F900518151 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
-		AF33F8861F12E3F900518151 /* ProfileSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSectionHeaderView.swift; sourceTree = "<group>"; };
-		AF33F8871F12E3F900518151 /* ProfileSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSectionHeaderView.xib; sourceTree = "<group>"; };
-		AF33F8881F12E3F900518151 /* SkillCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
-		AF33F8891F12E3F900518151 /* SkillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillCell.xib; sourceTree = "<group>"; };
-		AF33F88B1F12E3F900518151 /* ProfileDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
-		AF33F88D1F12E3F900518151 /* AboutToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutToViewModelMapper.swift; sourceTree = "<group>"; };
-		AF33F88E1F12E3F900518151 /* ContactFieldsModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldsModelMapper.swift; sourceTree = "<group>"; };
-		AF33F88F1F12E3F900518151 /* SkillToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillToViewModelMapper.swift; sourceTree = "<group>"; };
-		AF33F8901F12E3F900518151 /* UserToViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToViewModelMapper.swift; sourceTree = "<group>"; };
-		AF33F8921F12E3F900518151 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		AF33F8931F12E3F900518151 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		AF33F8941F12E3F900518151 /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
-		AF33F8951F12E3F900518151 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		AF33F8961F12E3F900518151 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		AF33F8981F12E3F900518151 /* ProfileRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
-		AF33F89A1F12E3F900518151 /* AboutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
-		AF33F89B1F12E3F900518151 /* ContactFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFieldViewModel.swift; sourceTree = "<group>"; };
-		AF33F89C1F12E3F900518151 /* SkillViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewModel.swift; sourceTree = "<group>"; };
-		AF33F89D1F12E3F900518151 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		AF33F89F1F12E3F900518151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF33F8A21F12E3F900518151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AF33F8A31F12E3F900518151 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE51CAE4AF02095E7AD7F35C /* Pods-UserProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UserProfile/Pods-UserProfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,10 +149,276 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF13E1A01F155C010022F08E /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1A11F155C010022F08E /* App */,
+				AF13E1B71F155C010022F08E /* Feature */,
+				AF13E1E31F155C010022F08E /* Resources */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		AF13E1A11F155C010022F08E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1A21F155C010022F08E /* AppDelegate.swift */,
+				AF13E1A31F155C010022F08E /* Assembly */,
+				AF13E1A61F155C010022F08E /* Extensions */,
+				AF13E1AA1F155C010022F08E /* Helpers */,
+				AF13E1B51F155C010022F08E /* Protocols */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF13E1A31F155C010022F08E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1A41F155C010022F08E /* Assembly+Profile.swift */,
+				AF13E1A51F155C010022F08E /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AF13E1A61F155C010022F08E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1A71F155C010022F08E /* String+App.swift */,
+				AF13E1A81F155C010022F08E /* UIColor+App.swift */,
+				AF13E1A91F155C010022F08E /* UIFont+App.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF13E1AA1F155C010022F08E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1AB1F155C010022F08E /* Extensions */,
+				AF13E1B21F155C010022F08E /* Generic Data Source */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF13E1AB1F155C010022F08E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1AC1F155C010022F08E /* NSObject+Helpers.swift */,
+				AF13E1AD1F155C010022F08E /* String+Helpers.swift */,
+				AF13E1AE1F155C010022F08E /* UICollectionView+Helpers.swift */,
+				AF13E1AF1F155C010022F08E /* UIColor+Helpers.swift */,
+				AF13E1B01F155C010022F08E /* UITableView+Helpers.swift */,
+				AF13E1B11F155C010022F08E /* UIView+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF13E1B21F155C010022F08E /* Generic Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1B31F155C010022F08E /* GenericCell.swift */,
+				AF13E1B41F155C010022F08E /* GenericDataSource.swift */,
+			);
+			path = "Generic Data Source";
+			sourceTree = "<group>";
+		};
+		AF13E1B51F155C010022F08E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1B61F155C010022F08E /* Mappable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AF13E1B71F155C010022F08E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1B81F155C010022F08E /* Profile */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AF13E1B81F155C010022F08E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1B91F155C010022F08E /* Data Layer */,
+				AF13E1BF1F155C010022F08E /* Domain Layer */,
+				AF13E1C91F155C010022F08E /* Navigation Layer */,
+				AF13E1CA1F155C010022F08E /* Presentation Layer */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AF13E1B91F155C010022F08E /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1BA1F155C010022F08E /* Data Source */,
+				AF13E1BE1F155C010022F08E /* ProfileRepository.swift */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		AF13E1BA1F155C010022F08E /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1BB1F155C010022F08E /* Disk */,
+				AF13E1BC1F155C010022F08E /* Memory */,
+				AF13E1BD1F155C010022F08E /* Network */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		AF13E1BB1F155C010022F08E /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		AF13E1BC1F155C010022F08E /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		AF13E1BD1F155C010022F08E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF13E1BF1F155C010022F08E /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1C01F155C010022F08E /* Mapper */,
+				AF13E1C51F155C010022F08E /* Model */,
+				AF13E1C81F155C010022F08E /* Use Case */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		AF13E1C01F155C010022F08E /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1C11F155C010022F08E /* AboutToViewModelMapper.swift */,
+				AF13E1C21F155C010022F08E /* ContactFieldsModelMapper.swift */,
+				AF13E1C31F155C010022F08E /* SkillToViewModelMapper.swift */,
+				AF13E1C41F155C010022F08E /* UserToViewModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AF13E1C51F155C010022F08E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1C61F155C010022F08E /* Skill.swift */,
+				AF13E1C71F155C010022F08E /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF13E1C81F155C010022F08E /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		AF13E1C91F155C010022F08E /* Navigation Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Navigation Layer";
+			sourceTree = "<group>";
+		};
+		AF13E1CA1F155C010022F08E /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1CB1F155C010022F08E /* Controller */,
+				AF13E1CE1F155C010022F08E /* View */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		AF13E1CB1F155C010022F08E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1CC1F155C010022F08E /* ProfileDataSource.swift */,
+				AF13E1CD1F155C010022F08E /* ProfilePresenter.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF13E1CE1F155C010022F08E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1CF1F155C010022F08E /* Cell */,
+				AF13E1D61F155C010022F08E /* Header */,
+				AF13E1DB1F155C010022F08E /* Model */,
+				AF13E1E01F155C010022F08E /* View Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF13E1CF1F155C010022F08E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1D01F155C010022F08E /* AboutCell.swift */,
+				AF13E1D11F155C010022F08E /* AboutCell.xib */,
+				AF13E1D21F155C010022F08E /* ContactFieldCell.swift */,
+				AF13E1D31F155C010022F08E /* ContactFieldCell.xib */,
+				AF13E1D41F155C010022F08E /* SkillCell.swift */,
+				AF13E1D51F155C010022F08E /* SkillCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF13E1D61F155C010022F08E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1D71F155C010022F08E /* ProfileHeaderView.swift */,
+				AF13E1D81F155C010022F08E /* ProfileHeaderView.xib */,
+				AF13E1D91F155C010022F08E /* ProfileSectionHeaderView.swift */,
+				AF13E1DA1F155C010022F08E /* ProfileSectionHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		AF13E1DB1F155C010022F08E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1DC1F155C010022F08E /* AboutViewModel.swift */,
+				AF13E1DD1F155C010022F08E /* ContactFieldViewModel.swift */,
+				AF13E1DE1F155C010022F08E /* SkillViewModel.swift */,
+				AF13E1DF1F155C010022F08E /* UserViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF13E1E01F155C010022F08E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1E11F155C010022F08E /* ProfileViewController.swift */,
+				AF13E1E21F155C010022F08E /* ProfileViewController.xib */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AF13E1E31F155C010022F08E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF13E1E41F155C010022F08E /* Assets.xcassets */,
+				AF13E1E51F155C010022F08E /* LaunchScreen.storyboard */,
+				AF13E1E71F155C010022F08E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AF1915691EE2BED300D29D19 = {
 			isa = PBXGroup;
 			children = (
-				AF33F8681F12E3F900518151 /* UserProfile */,
+				AF13E1A01F155C010022F08E /* UserProfile */,
 				AF1915891EE2BED300D29D19 /* UserProfileTests */,
 				AF1915731EE2BED300D29D19 /* Products */,
 				D168207B0E1C2C2E4ABFA3CE /* Pods */,
@@ -176,176 +442,6 @@
 				AF19158C1EE2BED300D29D19 /* Info.plist */,
 			);
 			path = UserProfileTests;
-			sourceTree = "<group>";
-		};
-		AF33F8681F12E3F900518151 /* UserProfile */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8691F12E3F900518151 /* AppDelegate.swift */,
-				AF33F86A1F12E3F900518151 /* Assembly */,
-				AF33F86D1F12E3F900518151 /* Extension */,
-				AF33F8711F12E3F900518151 /* Generic */,
-				AF33F87E1F12E3F900518151 /* Profile */,
-				AF33F89E1F12E3F900518151 /* Resources */,
-				AF33F8A01F12E3F900518151 /* SupportingFiles */,
-			);
-			path = UserProfile;
-			sourceTree = "<group>";
-		};
-		AF33F86A1F12E3F900518151 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F86B1F12E3F900518151 /* Assembly+Profile.swift */,
-				AF33F86C1F12E3F900518151 /* Assembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		AF33F86D1F12E3F900518151 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F86E1F12E3F900518151 /* String+App.swift */,
-				AF33F86F1F12E3F900518151 /* UIColor+App.swift */,
-				AF33F8701F12E3F900518151 /* UIFont+App.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		AF33F8711F12E3F900518151 /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8721F12E3F900518151 /* DataSource */,
-				AF33F8751F12E3F900518151 /* Helper */,
-				AF33F87C1F12E3F900518151 /* Mapper */,
-			);
-			path = Generic;
-			sourceTree = "<group>";
-		};
-		AF33F8721F12E3F900518151 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8731F12E3F900518151 /* GenericCell.swift */,
-				AF33F8741F12E3F900518151 /* GenericDataSource.swift */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
-		AF33F8751F12E3F900518151 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8761F12E3F900518151 /* NSObject+Helpers.swift */,
-				AF33F8771F12E3F900518151 /* String+Helpers.swift */,
-				AF33F8781F12E3F900518151 /* UICollectionView+Helpers.swift */,
-				AF33F8791F12E3F900518151 /* UIColor+Helpers.swift */,
-				AF33F87A1F12E3F900518151 /* UITableView+Helpers.swift */,
-				AF33F87B1F12E3F900518151 /* UIView+Helpers.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		AF33F87C1F12E3F900518151 /* Mapper */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F87D1F12E3F900518151 /* Mappable.swift */,
-			);
-			path = Mapper;
-			sourceTree = "<group>";
-		};
-		AF33F87E1F12E3F900518151 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8941F12E3F900518151 /* ProfilePresenter.swift */,
-				AF33F8951F12E3F900518151 /* ProfileViewController.swift */,
-				AF33F8961F12E3F900518151 /* ProfileViewController.xib */,
-				AF33F87F1F12E3F900518151 /* Cell */,
-				AF33F88A1F12E3F900518151 /* DataSource */,
-				AF33F88C1F12E3F900518151 /* Mapper */,
-				AF33F8911F12E3F900518151 /* Model */,
-				AF33F8971F12E3F900518151 /* Repository */,
-				AF33F8991F12E3F900518151 /* ViewModel */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		AF33F87F1F12E3F900518151 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8801F12E3F900518151 /* AboutCell.swift */,
-				AF33F8811F12E3F900518151 /* AboutCell.xib */,
-				AF33F8821F12E3F900518151 /* ContactFieldCell.swift */,
-				AF33F8831F12E3F900518151 /* ContactFieldCell.xib */,
-				AF33F8841F12E3F900518151 /* ProfileHeaderView.swift */,
-				AF33F8851F12E3F900518151 /* ProfileHeaderView.xib */,
-				AF33F8861F12E3F900518151 /* ProfileSectionHeaderView.swift */,
-				AF33F8871F12E3F900518151 /* ProfileSectionHeaderView.xib */,
-				AF33F8881F12E3F900518151 /* SkillCell.swift */,
-				AF33F8891F12E3F900518151 /* SkillCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		AF33F88A1F12E3F900518151 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F88B1F12E3F900518151 /* ProfileDataSource.swift */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
-		AF33F88C1F12E3F900518151 /* Mapper */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F88D1F12E3F900518151 /* AboutToViewModelMapper.swift */,
-				AF33F88E1F12E3F900518151 /* ContactFieldsModelMapper.swift */,
-				AF33F88F1F12E3F900518151 /* SkillToViewModelMapper.swift */,
-				AF33F8901F12E3F900518151 /* UserToViewModelMapper.swift */,
-			);
-			path = Mapper;
-			sourceTree = "<group>";
-		};
-		AF33F8911F12E3F900518151 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8921F12E3F900518151 /* Skill.swift */,
-				AF33F8931F12E3F900518151 /* User.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AF33F8971F12E3F900518151 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8981F12E3F900518151 /* ProfileRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		AF33F8991F12E3F900518151 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F89A1F12E3F900518151 /* AboutViewModel.swift */,
-				AF33F89B1F12E3F900518151 /* ContactFieldViewModel.swift */,
-				AF33F89C1F12E3F900518151 /* SkillViewModel.swift */,
-				AF33F89D1F12E3F900518151 /* UserViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AF33F89E1F12E3F900518151 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F89F1F12E3F900518151 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		AF33F8A01F12E3F900518151 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AF33F8A11F12E3F900518151 /* LaunchScreen.storyboard */,
-				AF33F8A31F12E3F900518151 /* Info.plist */,
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		D168207B0E1C2C2E4ABFA3CE /* Pods */ = {
@@ -450,14 +546,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF33F8C61F12E3F900518151 /* ProfileViewController.xib in Resources */,
-				AF33F8CD1F12E3F900518151 /* LaunchScreen.storyboard in Resources */,
-				AF33F8B41F12E3F900518151 /* AboutCell.xib in Resources */,
-				AF33F8B81F12E3F900518151 /* ProfileHeaderView.xib in Resources */,
-				AF33F8B61F12E3F900518151 /* ContactFieldCell.xib in Resources */,
-				AF33F8CC1F12E3F900518151 /* Assets.xcassets in Resources */,
-				AF33F8BC1F12E3F900518151 /* SkillCell.xib in Resources */,
-				AF33F8BA1F12E3F900518151 /* ProfileSectionHeaderView.xib in Resources */,
+				AF13E20F1F155C010022F08E /* ProfileViewController.xib in Resources */,
+				AF13E2111F155C010022F08E /* LaunchScreen.storyboard in Resources */,
+				AF13E2011F155C010022F08E /* AboutCell.xib in Resources */,
+				AF13E2051F155C010022F08E /* SkillCell.xib in Resources */,
+				AF13E2091F155C010022F08E /* ProfileSectionHeaderView.xib in Resources */,
+				AF13E2101F155C010022F08E /* Assets.xcassets in Resources */,
+				AF13E2031F155C010022F08E /* ContactFieldCell.xib in Resources */,
+				AF13E2071F155C010022F08E /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,40 +677,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF33F8B11F12E3F900518151 /* UIView+Helpers.swift in Sources */,
-				AF33F8C21F12E3F900518151 /* Skill.swift in Sources */,
-				AF33F8B21F12E3F900518151 /* Mappable.swift in Sources */,
-				AF33F8C71F12E3F900518151 /* ProfileRepository.swift in Sources */,
-				AF33F8CA1F12E3F900518151 /* SkillViewModel.swift in Sources */,
-				AF33F8C01F12E3F900518151 /* SkillToViewModelMapper.swift in Sources */,
-				AF33F8B51F12E3F900518151 /* ContactFieldCell.swift in Sources */,
-				AF33F8C31F12E3F900518151 /* User.swift in Sources */,
-				AF33F8AD1F12E3F900518151 /* String+Helpers.swift in Sources */,
-				AF33F8A41F12E3F900518151 /* AppDelegate.swift in Sources */,
-				AF33F8A61F12E3F900518151 /* Assembly.swift in Sources */,
-				AF33F8B91F12E3F900518151 /* ProfileSectionHeaderView.swift in Sources */,
-				AF33F8C41F12E3F900518151 /* ProfilePresenter.swift in Sources */,
-				AF33F8B31F12E3F900518151 /* AboutCell.swift in Sources */,
-				AF33F8AB1F12E3F900518151 /* GenericDataSource.swift in Sources */,
-				AF33F8C81F12E3F900518151 /* AboutViewModel.swift in Sources */,
-				AF33F8C51F12E3F900518151 /* ProfileViewController.swift in Sources */,
-				AF33F8BB1F12E3F900518151 /* SkillCell.swift in Sources */,
-				AF33F8BF1F12E3F900518151 /* ContactFieldsModelMapper.swift in Sources */,
-				AF33F8C91F12E3F900518151 /* ContactFieldViewModel.swift in Sources */,
-				AF33F8BD1F12E3F900518151 /* ProfileDataSource.swift in Sources */,
-				AF33F8A81F12E3F900518151 /* UIColor+App.swift in Sources */,
-				AF33F8A71F12E3F900518151 /* String+App.swift in Sources */,
-				AF33F8AE1F12E3F900518151 /* UICollectionView+Helpers.swift in Sources */,
-				AF33F8AF1F12E3F900518151 /* UIColor+Helpers.swift in Sources */,
-				AF33F8A91F12E3F900518151 /* UIFont+App.swift in Sources */,
-				AF33F8B71F12E3F900518151 /* ProfileHeaderView.swift in Sources */,
-				AF33F8AC1F12E3F900518151 /* NSObject+Helpers.swift in Sources */,
-				AF33F8A51F12E3F900518151 /* Assembly+Profile.swift in Sources */,
-				AF33F8B01F12E3F900518151 /* UITableView+Helpers.swift in Sources */,
-				AF33F8BE1F12E3F900518151 /* AboutToViewModelMapper.swift in Sources */,
-				AF33F8CB1F12E3F900518151 /* UserViewModel.swift in Sources */,
-				AF33F8C11F12E3F900518151 /* UserToViewModelMapper.swift in Sources */,
-				AF33F8AA1F12E3F900518151 /* GenericCell.swift in Sources */,
+				AF13E1FC1F155C010022F08E /* Skill.swift in Sources */,
+				AF13E20D1F155C010022F08E /* UserViewModel.swift in Sources */,
+				AF13E1F21F155C010022F08E /* UITableView+Helpers.swift in Sources */,
+				AF13E20A1F155C010022F08E /* AboutViewModel.swift in Sources */,
+				AF13E1FF1F155C010022F08E /* ProfilePresenter.swift in Sources */,
+				AF13E20B1F155C010022F08E /* ContactFieldViewModel.swift in Sources */,
+				AF13E1F61F155C010022F08E /* Mappable.swift in Sources */,
+				AF13E1F91F155C010022F08E /* ContactFieldsModelMapper.swift in Sources */,
+				AF13E1F81F155C010022F08E /* AboutToViewModelMapper.swift in Sources */,
+				AF13E1E81F155C010022F08E /* AppDelegate.swift in Sources */,
+				AF13E1F71F155C010022F08E /* ProfileRepository.swift in Sources */,
+				AF13E1F11F155C010022F08E /* UIColor+Helpers.swift in Sources */,
+				AF13E1EA1F155C010022F08E /* Assembly.swift in Sources */,
+				AF13E1F51F155C010022F08E /* GenericDataSource.swift in Sources */,
+				AF13E2061F155C010022F08E /* ProfileHeaderView.swift in Sources */,
+				AF13E1FD1F155C010022F08E /* User.swift in Sources */,
+				AF13E2001F155C010022F08E /* AboutCell.swift in Sources */,
+				AF13E1EC1F155C010022F08E /* UIColor+App.swift in Sources */,
+				AF13E1F01F155C010022F08E /* UICollectionView+Helpers.swift in Sources */,
+				AF13E2021F155C010022F08E /* ContactFieldCell.swift in Sources */,
+				AF13E1EE1F155C010022F08E /* NSObject+Helpers.swift in Sources */,
+				AF13E1EF1F155C010022F08E /* String+Helpers.swift in Sources */,
+				AF13E2081F155C010022F08E /* ProfileSectionHeaderView.swift in Sources */,
+				AF13E1FB1F155C010022F08E /* UserToViewModelMapper.swift in Sources */,
+				AF13E20E1F155C010022F08E /* ProfileViewController.swift in Sources */,
+				AF13E2041F155C010022F08E /* SkillCell.swift in Sources */,
+				AF13E1EB1F155C010022F08E /* String+App.swift in Sources */,
+				AF13E1FE1F155C010022F08E /* ProfileDataSource.swift in Sources */,
+				AF13E20C1F155C010022F08E /* SkillViewModel.swift in Sources */,
+				AF13E1ED1F155C010022F08E /* UIFont+App.swift in Sources */,
+				AF13E1F31F155C010022F08E /* UIView+Helpers.swift in Sources */,
+				AF13E1E91F155C010022F08E /* Assembly+Profile.swift in Sources */,
+				AF13E1F41F155C010022F08E /* GenericCell.swift in Sources */,
+				AF13E1FA1F155C010022F08E /* SkillToViewModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,10 +733,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF33F8A11F12E3F900518151 /* LaunchScreen.storyboard */ = {
+		AF13E1E51F155C010022F08E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AF33F8A21F12E3F900518151 /* Base */,
+				AF13E1E61F155C010022F08E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -749,7 +845,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 348YA8SDU8;
-				INFOPLIST_FILE = UserProfile/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = UserProfile/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = antoescu.UserProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -763,7 +859,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 348YA8SDU8;
-				INFOPLIST_FILE = UserProfile/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = UserProfile/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = antoescu.UserProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
